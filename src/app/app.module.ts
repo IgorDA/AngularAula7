@@ -8,12 +8,15 @@ import { ContratoComponent } from './contrato/contrato.component';
 import { FormsModule } from '@angular/forms';
 import { ContratoService } from './services/contrato.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AlunoComponent } from './aluno/aluno.component';
+import { AlunoService } from './services/aluno.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContratoComponent
+    ContratoComponent,
+    AlunoComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ContratoService],
+  providers: [ContratoService, AlunoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
